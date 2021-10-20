@@ -1,0 +1,43 @@
+<html>
+<head>
+	<title> JQuery Test  </title>
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	<script type = "text/javascript">
+
+		    // ready func call when document is ready to render
+         $(document).ready(function() 
+         {     
+               // Wrap
+               $('#btnWrap').click(function(){
+                  $('#bdy p').wrap("<h2><b></b></h2>");
+               });
+
+                // Unwrap
+                $('#btnUnWrap').click(function(){
+                  $('#bdy p').unwrap();
+               });
+			   
+			   // Wrap
+               $('#btnWrap').click(function(){
+                  $('#bdy p').wrapAll("<h2> </h2>");
+               });
+
+                // Unwrap
+                $('#btnUnWrap').click(function(){
+                  $('#bdy p').wrapInner("<h2><b></b></h2>");
+               });
+              
+         });
+     </script>
+<head>
+   <body>
+   <div id="bdy" style="background-color: palegreen;">
+      <h1> JQuery Information</h1>
+      <p>jQuery is a JavaScript library designed to simplify HTML DOM</p>
+   </div>
+   <button id="btnWrap"> Wrap</button> 
+   <button id="btnUnWrap"> UnWrap</button>
+   <button id="btnWrap"> Wrap All</button> 
+   <button id="btnUnWrap"> Wrap Inner </button>
+</body>
+</html>
